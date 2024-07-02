@@ -1,0 +1,128 @@
+@charset "ISO-8859-1";
+
+#total{
+	width: 100%;
+	height: 100vh;
+}
+#total > article{
+	width: 92%;
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+}
+.menu{
+	flex-basis: 20%;
+	height: 50px;
+	align-items: center;
+	display: flex;
+	background-color: lightskyblue;
+	box-shadow: 2px 3px rgb(243, 242, 242);
+}
+.menuBar{
+	flex-basis: 90%;
+	/* box-shadow: 5px 5px royalblue; */
+	/* overflow: hidden; */
+}
+.menu *> a{
+	background-color: lightskyblue;
+	margin-left: 10px;
+	height: 25px;
+	width: auto;
+	padding: 14px 16px;
+	overflow: hidden;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+	/* border-radius: 2px solid black; */
+	font-size: 16px;
+	color: white;
+}
+.menu *> a:first-child{
+	background-color: lightsteelblue;
+	border-radius: 10px;
+	color: black;
+}
+
+.menu *> a:hover{
+	background-color: lightsteelblue;
+	border-radius: 10px;
+	color: black;	
+}
+
+.logout{
+	flex-basis: 10%;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.main{
+	flex-basis: 80%;
+	height: inherit;
+	background-color: white;
+}
+.col{
+	display: flex;
+}
+.left{
+	flex-basis: 20%;
+}
+.center{
+	padding: 10px;
+	flex-basis: 60%;	
+	align-items: center;
+	justify-content: center;
+    /* margin-left: 50px; */
+}
+.right{
+	flex-basis: 20%;
+}
+.mainTxt{
+    color: black;
+    text-align: center;
+	font-size: 28px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.formClass{
+    width: 300px;
+    height: inherit;
+	background-color: white;
+	/* border-radius: 5px solid black; */
+	box-shadow: 2px 2px 4px 4px lightgray;
+	/* color: red; */
+    padding: 50px;
+    margin-top: 10px;
+	margin-left: 180px;
+}
+.formClass *> input{
+	width: 280px;
+	height: 35px;
+	margin-top: 3px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	border-color: white;
+	box-shadow: 3px 3px lightgrey;
+}
+.formClass *> input:last-child{
+	height: 43px;
+	/* width: auto; */
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 5px solid black;
+	border-color: aliceblue;
+	background-color: rgb(115, 168, 238);
+}
+.formClass *> input:last-child:hover{
+	height: 43px;
+	/* width: auto; */
+	/* padding: 10px; */
+	border-radius: 10px;
+	box-shadow: 5px solid black;
+	border-color: aliceblue;
+	background-color: rgb(35, 152, 230);
+}
+.invalidMsg{
+	color: red;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
